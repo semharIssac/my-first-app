@@ -1,0 +1,4 @@
+<input type="text" [(ngModel)]="serverName">
+<p *ngIf="isCreated">{{serverCreationStatus}}</p>
+<button class="btn btn-primary" [disabled]= "!enabled" (click)="onButtonClick()">Click me please!</button>
+<app-servers></app-servers>
